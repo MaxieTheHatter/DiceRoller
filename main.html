@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Diceroller 5000</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        Number of dices:
+        <input type="number" id="numberOfDices" value="0" min="0">
+        <form action="#">
+            <label for="dicetype">Type</label>
+            <select name="diceTypes" id="dicetype">
+              <option value="6" selected>D6</option>
+              <option value="8">D8</option>
+              <option value="10">D10</option>
+              <option value="12">D12</option>
+              <option value="18">D18</option>
+              <option value="20">D20</option>
+              <option value="100">D100</option>
+            </select>
+        </form>
+        <section id="dices"></section>
+        <button id="button" onclick="roll(sides)">Roll</button>
+        <script src="dice.js"></script>
+    </body>
+</html>
